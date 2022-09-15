@@ -15,7 +15,7 @@
                 <li class="sidebar-title">Menu</li>
 
                 <li class="sidebar-item active">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('surat.index') }}" class='sidebar-link'>
                         <i class="bi bi-star-fill"></i>
                         <span>Arsip</span>
                     </a>

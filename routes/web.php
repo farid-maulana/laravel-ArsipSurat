@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SuratController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/surat');
+Route::resource('surat', SuratController::class)->except('edit', 'update');
+Route::get('/search/surat', [SuratController::class, 'search'])->name('surat.search');
+Route::get('/download/surat/{id}', [SuratController::class, 'download'])->name('surat.download');
