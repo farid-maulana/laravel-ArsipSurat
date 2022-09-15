@@ -22,7 +22,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('about.index') }}" class='sidebar-link'>
                         <i class="bi bi-exclamation-circle-fill"></i>
                         <span>Info</span>
                     </a>

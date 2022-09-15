@@ -18,3 +18,6 @@ Route::redirect('/', '/surat');
 Route::resource('surat', SuratController::class)->except('edit', 'update');
 Route::get('/search/surat', [SuratController::class, 'search'])->name('surat.search');
 Route::get('/download/surat/{id}', [SuratController::class, 'download'])->name('surat.download');
+Route::get('/about', function() {
+    return view('about.index');
+})->name('about.index');
