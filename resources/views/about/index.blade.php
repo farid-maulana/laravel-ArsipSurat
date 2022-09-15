@@ -18,7 +18,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-3">
-                                    <img class="img-fluid" src="assets/images/samples/origami.jpg"
+                                    <img class="img-fluid" src="{{ asset('assets/images/faces/3.jpg') }}"
                                         alt="Card image cap" style="height: 15rem; border-radius: 1rem">
                                 </div>
                                 <div class="col-9">
