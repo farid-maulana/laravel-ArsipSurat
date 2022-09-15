@@ -14,14 +14,14 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item active">
+                <li class="sidebar-item {{ Request::segment(1) === 'surat' ? 'active' : '' }}">
                     <a href="{{ route('surat.index') }}" class='sidebar-link'>
                         <i class="bi bi-star-fill"></i>
                         <span>Arsip</span>
                     </a>
                 </li>
 
-                <li class="sidebar-item">
+                <li class="sidebar-item {{ Request::segment(1) === 'about' ? 'active' : '' }}">
                     <a href="{{ route('about.index') }}" class='sidebar-link'>
                         <i class="bi bi-exclamation-circle-fill"></i>
                         <span>Info</span>
