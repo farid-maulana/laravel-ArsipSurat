@@ -64,7 +64,7 @@
                                                         data-bs-target="#delete{{ $item->id }}">
                                                         Hapus
                                                     </button>
-                                                    <a href="{{ route('surat.download', $item->id) }}" class="btn btn-warning btn-sm">Unduh</a>
+                                                    <a href="{{ $item->file_surat }}" class="btn btn-warning btn-sm">Unduh</a>
                                                     <a href="{{ route('surat.show', $item->id) }}" class="btn btn-info btn-sm">Lihat >></a>
                                                 </td>
                                             </tr>

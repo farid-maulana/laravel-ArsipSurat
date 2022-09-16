@@ -34,7 +34,7 @@
                             <div class="mt-3">
                                 <a href="{{ route('surat.index') }}" class="btn btn-light-secondary">
                                     << Kembali</a>
-                                <a href="{{ route('surat.download', $data->id) }}"
+                                <a href="{{ asset($data->file_surat) }}"
                                     class="btn btn-warning mx-3">Unduh</a>
                                 <a href="#"
                                     class="btn btn-primary">Edit/Ganti File</a>
